@@ -1,15 +1,17 @@
 syntax on
+" set termguicolors
 set nu
+set wrap
+set hlsearch
+set incsearch
+set ignorecase
 set ai
 set ls=2
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
-set expandtab
 set relativenumber
 set ruler
 set hlsearch
 set background=dark
+set noerrorbells
 
 inoremap jk <Esc>
 vnoremap jk <Esc>
@@ -25,4 +27,9 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'christoomey/vim-tmux-navigator'
 call vundle#end()  
-filetype plugin indent on 
+" filetype plugin indent on 
+
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set expandtab
